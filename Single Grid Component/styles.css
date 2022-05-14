@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --white:#FFFFFF;
+    --lightgreen:#C0DF34;
+    --lightseagreen:#2AB2AF;
+    --lightergreen:#4ABEBD;
+    --lightblue:#E6EFF6;
+    --purplishgrey:#98A6BD;
+    --boxshadow:rgba(0, 0, 0, 0.25);
+}
+
+*{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin:0px;
+    align-items: center;
+    color: var(--white);
+}
+
+/* MOBILE FIRST APPRACH */
+/* styles for mobile */
+
+body{
+    background-color: var(--lightblue);
+    display: flex;
+    justify-content: center;
+}
+
+.main-grid-container {
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 75px;
+    width:100%;
+}
+.top-container, .bottom-container {
+    margin-top:30px;
+}
+
+.top-container, 
+.bottom-container .monthly-subscription-container,
+.bottom-container .why-us-container {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.main-grid-container .top-container .main-heading {
+    color:var(--lightseagreen);
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.top-container .sub-heading {
+    color:var(--lightgreen);
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.top-container .description {
+    color: var(--purplishgrey);
+    line-height: 25px;
+    max-width: 300px;
+    padding-top: 15px;
+}
+
+.main-grid-container .bottom-container {
+    display:block;
+}
+
+.bottom-container .monthly-subscription-container,
+.bottom-container .why-us-container {
+    width: auto;
+}
+
+.bottom-container .monthly-subscription-container {
+    background-color: var(--lightseagreen);
+    padding-top: 30px;
+    padding-bottom: 25px ;
+}
+
+
+.monthly-subscription-container .bottom-main-heading,
+.why-us-container .bottom-main-heading {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.monthly-subscription-container .amount-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.amount-wrapper .amount {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.amount-wrapper .month {
+    
+    padding-left: 10px;
+}
+
+.monthly-subscription-container .monthly-description {
+    padding-top: 12px;
+}
+
+.monthly-subscription-container .sign-up {
+    align-items: center;
+    background-color: var(--lightgreen);
+    border-radius: 7px;
+    border: none;
+    font-weight: 700;
+    justify-content: center;
+    height: 50px;
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.bottom-container .why-us-container {
+    background-color: var(--lightergreen);
+    padding-top: 30px;
+    padding-bottom: 15px ;
+}
+
+.why-us-container .why-description {
+    max-width: 230px;
+    line-height: 22px;
+    padding-top: 20px;
+}
+
+/* tablet potrait */
+@media screen and (min-width:768px) and (max-width:992px){
+    .main-grid-container {
+        margin-left:80px;
+        margin-right: 80px;
+    }
+
+    .why-us-container .why-description {
+        max-width: 350px;
+    }
+}
+
+
+/* tablet ladscape & desktop & larger screens */
+@media screen and (min-width: 992px){
+    .main-grid-container {
+        margin-top: 160px;
+        width: 630px;
+    }
+
+    .main-grid-container .top-container .main-heading {
+        font-size: 30px;
+    }
+
+    .top-container .sub-heading {
+        font-size: 20px;
+    }
+
+    .top-container .description {
+        max-width: 800px;
+        font-size: 17px;
+    }
+
+    .main-grid-container .bottom-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .bottom-container .monthly-subscription-container,
+    .bottom-container .why-us-container {
+        width: 100%
+    }
+
+    .bottom-container .monthly-subscription-container{
+        height: 200px;
+    }
+
+    .bottom-container .why-us-container {
+        height: 210px;
+    }
+    .why-us-container .why-description {
+        line-height: 20px;
+    }
+}
