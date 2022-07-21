@@ -2,7 +2,6 @@
 
 ## Welcome! 👋 Thanks for checking out thing Challenge
 
-[Figma file link] (https://www.figma.com/file/QENothATS9j7D0INV5bmun/%F0%9F%94%B4-Single-Price-Grid-%F0%9F%94%B4?node-id=117%3A27)
 [Frontend Metor Link] (https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc)
 
 Your challenge is to build out this preview card component and get it looking as close to the design as possible. Your users should be able to:
